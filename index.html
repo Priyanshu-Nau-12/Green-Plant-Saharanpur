@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ===== ESSENTIAL SEO TAGS ===== -->
+    <title>Green Plant Saharanpur - Buy Plants Online | Indoor & Outdoor Plants Delivery</title>
+    <meta name="description" content="Green Plant Saharanpur - Buy best quality indoor plants, outdoor plants, medicinal plants online. Money Plant, Tulsi, Rose, Aloe Vera plants with free delivery in Saharanpur. Order now!">
+    <meta name="keywords" content="plants saharanpur, indoor plants, outdoor plants, money plant, tulsi plant, rose plant, aloe vera, bamboo plant, snake plant, medicinal plants, plant delivery saharanpur, green plant shop">
+    <meta name="author" content="Green Plant Saharanpur">
+    <meta name="robots" content="index, follow">
+    
+    <!-- ===== OPEN GRAPH TAGS ===== -->
+    <meta property="og:title" content="Green Plant Saharanpur - Buy Plants Online">
+    <meta property="og:description" content="Best quality plants with free delivery in Saharanpur. Money Plant, Tulsi, Rose plants available.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://greenplantsaharanpur.com">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80">
+    
+    <!-- ===== TWITTER CARD TAGS ===== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Green Plant Saharanpur - Buy Plants Online">
+    <meta name="twitter:description" content="Best quality plants with free delivery in Saharanpur">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80">
+    
+    <!-- ===== SCHEMA MARKUP ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "PlantStore",
+      "name": "Green Plant Saharanpur",
+      "description": "Online plant store offering indoor plants, outdoor plants, and medicinal plants in Saharanpur",
+      "url": "https://greenplantsaharanpur.com",
+      "telephone": "+91-6556515556",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Saharanpur",
+        "addressRegion": "Uttar Pradesh",
+        "postalCode": "247001",
+        "addressCountry": "IN"
+      },
+      "openingHours": "Mo-Su 09:00-20:00",
+      "priceRange": "₹",
+      "areaServed": "Saharanpur"
+    }
+    </script>
+    
+    <!-- ===== FAVICON ===== -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+    
+    <!-- ===== EXTERNAL CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Sidebar -->
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">×</a>
+    <a href="#">Indoor Plants</a>
+    <a href="#">Outdoor Plants</a>
+    <a href="#">Flowering Plants</a>
+    <a href="#">Medicinal Plants</a>
+    <a href="#">Succulents</a>
+    <a href="#">Trees</a>
+    <a href="#">Herbs</a>
+</div>
+
+<!-- Navbar -->
+<header class="navbar" role="banner">
+    <div class="navbar-left">
+        <i class="fas fa-bars menu-icon" onclick="openSidebar()" aria-label="Open menu"></i>
+        <input type="text" placeholder="Search plants..." aria-label="Search plants">
+    </div>
+    <h1 itemscope itemtype="https://schema.org/Organization">
+        <span itemprop="name">🌿 Green Plant Saharanpur</span>
+    </h1>
+    <div class="navbar-right">
+        <div class="cart-icon" onclick="openCartModal()" aria-label="Shopping cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count" id="cartCount">0</span>
+        </div>
+        <div class="user-profile" id="userProfile">
+            <button><i class="fas fa-user"></i> My Account</button>
+            <div class="profile-dropdown">
+                <a href="#" onclick="showOrderTracking()">Track Orders</a>
+                <a href="#" onclick="showWishlist()">Wishlist</a>
+                <a href="#">Settings</a>
+                <a href="#" onclick="logout()">Logout</a>
+            </div>
+        </div>
+        <button id="adminButton" onclick="showAdminPanel()" style="display:none;">
+            <i class="fas fa-cog"></i> Admin
+        </button>
+        <button id="loginButton" onclick="openLoginModal()"><i class="fas fa-user"></i> Login</button>
+    </div>
+</header>
+
+<!-- Banner -->
+<section class="banner" aria-labelledby="main-heading">
+    <div class="banner-content">
+        <h1 id="main-heading">Bring Nature Home</h1>
+        <p>Discover a wide variety of beautiful indoor and outdoor plants to enhance your living space in Saharanpur</p>
+        <button onclick="scrollToProducts()">Shop Now</button>
+    </div>
+</section>
+
+<!-- Categories Section -->
+<section class="categories" aria-labelledby="categories-heading">
+    <h2 id="categories-heading">Shop by Category</h2>
+    <div class="category-grid">
+        <div class="category-item" onclick="filterCategory('indoor')">
+            <i class="fas fa-leaf" aria-hidden="true"></i>
+            <h3>Indoor Plants</h3>
+            <p>Best plants for home and office</p>
+        </div>
+        <div class="category-item" onclick="filterCategory('outdoor')">
+            <i class="fas fa-tree" aria-hidden="true"></i>
+            <h3>Outdoor Plants</h3>
+            <p>Garden and balcony plants</p>
+        </div>
+        <div class="category-item" onclick="filterCategory('flowering')">
+            <i class="fas fa-seedling" aria-hidden="true"></i>
+            <h3>Flowering Plants</h3>
+            <p>Colorful flowering plants</p>
+        </div>
+        <div class="category-item" onclick="filterCategory('medicinal')">
+            <i class="fas fa-capsules" aria-hidden="true"></i>
+            <h3>Medicinal Plants</h3>
+            <p>Tulsi, Aloe Vera and more</p>
+        </div>
+    </div>
+</section>
+
+<!-- Content -->
+<main class="content" id="products" aria-labelledby="products-heading">
+    <h2 id="products-heading" style="display:none;">Our Plant Collection</h2>
+    
+    <!-- Plant 1 -->
+    <article class="plant" data-category="indoor" itemscope itemtype="https://schema.org/Product">
+        <div class="plant-badge">Indoor</div>
+        <button class="wishlist-btn" data-id="1" onclick="toggleWishlist(this)" aria-label="Add to wishlist">
+            <i class="far fa-heart"></i>
+        </button>
+        <img src="https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200" 
+             alt="Money Plant - Indoor plant for good luck and air purification" 
+             onclick="showProductDetail(1)"
+             itemprop="image">
+        <h2 itemprop="name">Money Plant</h2>
+        <p itemprop="description">Popular indoor plant for good luck and air purification.</p>
+        <p>Price: <span itemprop="price">180</span> ₹</p>
+        <meta itemprop="priceCurrency" content="INR">
+        <button class="add-to-cart" 
+                data-id="1" 
+                data-name="Money Plant" 
+                data-price="180" 
+                data-image="https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200"
+                aria-label="Add Money Plant to cart">
+            Add to Cart
+        </button>
+    </article>
+
+    <!-- Plant 2 -->
+    <article class="plant" data-category="medicinal" itemscope itemtype="https://schema.org/Product">
+        <div class="plant-badge">Medicinal</div>
+        <button class="wishlist-btn" data-id="2" onclick="toggleWishlist(this)" aria-label="Add to wishlist">
+            <i class="far fa-heart"></i>
+        </button>
+        <img src="https://images.pexels.com/photos/736230/pexels-photo-736230.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200" 
+             alt="Tulsi Plant - Holy basil with medicinal properties" 
+             onclick="showProductDetail(2)"
+             itemprop="image">
+        <h2 itemprop="name">Tulsi Plant</h2>
+        <p itemprop="description">Holy basil with medicinal properties and religious significance.</p>
+        <p>Price: <span itemprop="price">150</span> ₹</p>
+        <meta itemprop="priceCurrency" content="INR">
+        <button class="add-to-cart" 
+                data-id="2" 
+                data-name="Tulsi Plant" 
+                data-price="150" 
+                data-image="https://images.pexels.com/photos/736230/pexels-photo-736230.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200"
+                aria-label="Add Tulsi Plant to cart">
+            Add to Cart
+        </button>
+    </article>
+
+    <!-- Plant 3 -->
+    <article class="plant" data-category="flowering" itemscope itemtype="https://schema.org/Product">
+        <div class="plant-badge">Flowering</div>
+        <button class="wishlist-btn" data-id="3" onclick="toggleWishlist(this)" aria-label="Add to wishlist">
+            <i class="far fa-heart"></i>
+        </button>
+        <img src="https://images.pexels.com/photos/235721/pexels-photo-235721.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200" 
+             alt="Rose Plant - Beautiful red roses for garden" 
+             onclick="showProductDetail(3)"
+             itemprop="image">
+        <h2 itemprop="name">Rose Plant</h2>
+        <p itemprop="description">Beautiful red roses that add color and fragrance to your garden.</p>
+        <p>Price: <span itemprop="price">200</span> ₹</p>
+        <meta itemprop="priceCurrency" content="INR">
+        <button class="add-to-cart" 
+                data-id="3" 
+                data-name="Rose Plant" 
+                data-price="200" 
+                data-image="https://images.pexels.com/photos/235721/pexels-photo-235721.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200"
+                aria-label="Add Rose Plant to cart">
+            Add to Cart
+        </button>
+    </article>
+
+    <!-- Plant 4 -->
+    <article class="plant" data-category="medicinal" itemscope itemtype="https://schema.org/Product">
+        <div class="plant-badge">Medicinal</div>
+        <button class="wishlist-btn" data-id="4" onclick="toggleWishlist(this)" aria-label="Add to wishlist">
+            <i class="far fa-heart"></i>
+        </button>
+        <img src="https://images.pexels.com/photos/4503269/pexels-photo-4503269.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200" 
+             alt="Aloe Vera - Medicinal plant with healing properties" 
+             onclick="showProductDetail(4)"
+             itemprop="image">
+        <h2 itemprop="name">Aloe Vera</h2>
+        <p itemprop="description">Medicinal plant with healing properties for skin and health.</p>
+        <p>Price: <span itemprop="price">220</span> ₹</p>
+        <meta itemprop="priceCurrency" content="INR">
+        <button class="add-to-cart" 
+                data-id="4" 
+                data-name="Aloe Vera" 
+                data-price="220" 
+                data-image="https://images.pexels.com/photos/4503269/pexels-photo-4503269.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200"
+                aria-label="Add Aloe Vera to cart">
+            Add to Cart
+        </button>
+    </article>
+
+    <!-- Plant 5 -->
+    <article class="plant" data-category="outdoor" itemscope itemtype="https://schema.org/Product">
+        <div class="plant-badge">Outdoor</div>
+        <button class="wishlist-btn" data-id="5" onclick="toggleWishlist(this)" aria-label="Add to wishlist">
+            <i class="far fa-heart"></i>
+        </button>
+        <img src="https://images.pexels.com/photos/1002703/pexels-photo-1002703.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200" 
+             alt="Bamboo Plant - Fast-growing plant for natural fences" 
+             onclick="showProductDetail(5)"
+             itemprop="image">
+        <h2 itemprop="name">Bamboo Plant</h2>
+        <p itemprop="description">Fast-growing plant perfect for creating natural fences.</p>
+        <p>Price: <span itemprop="price">250</span> ₹</p>
+        <meta itemprop="priceCurrency" content="INR">
+        <button class="add-to-cart" 
+                data-id="5" 
+                data-name="Bamboo Plant" 
+                data-price="250" 
+                data-image="https://images.pexels.com/photos/1002703/pexels-photo-1002703.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200"
+                aria-label="Add Bamboo Plant to cart">
+            Add to Cart
+        </button>
+    </article>
+
+    <!-- Plant 6 -->
+    <article class="plant" data-category="indoor" itemscope itemtype="https://schema.org/Product">
+        <div class="plant-badge">Indoor</div>
+        <button class="wishlist-btn" data-id="6" onclick="toggleWishlist(this)" aria-label="Add to wishlist">
+            <i class="far fa-heart"></i>
+        </button>
+        <img src="https://images.pexels.com/photos/2123482/pexels-photo-2123482.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200" 
+             alt="Snake Plant - Low maintenance indoor air purifying plant" 
+             onclick="showProductDetail(6)"
+             itemprop="image">
+        <h2 itemprop="name">Snake Plant</h2>
+        <p itemprop="description">Low maintenance indoor plant that purifies the air.</p>
+        <p>Price: <span itemprop="price">280</span> ₹</p>
+        <meta itemprop="priceCurrency" content="INR">
+        <button class="add-to-cart" 
+                data-id="6" 
+                data-name="Snake Plant" 
+                data-price="280" 
+                data-image="https://images.pexels.com/photos/2123482/pexels-photo-2123482.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200"
+                aria-label="Add Snake Plant to cart">
+            Add to Cart
+        </button>
+    </article>
+</main>
+
+<!-- Testimonials -->
+<section class="testimonials" aria-labelledby="testimonials-heading">
+    <h2 id="testimonials-heading">What Our Customers Say</h2>
+    <div class="testimonial-grid">
+        <blockquote class="testimonial" itemscope itemtype="https://schema.org/Review">
+            <div class="testimonial-text" itemprop="reviewBody">
+                "The plants I ordered arrived in perfect condition. The quality is exceptional and they've transformed my balcony!"
+            </div>
+            <cite class="testimonial-author" itemprop="author">- Priya Sharma, Delhi</cite>
+        </blockquote>
+        <blockquote class="testimonial" itemscope itemtype="https://schema.org/Review">
+            <div class="testimonial-text" itemprop="reviewBody">
+                "Excellent customer service and healthy plants. My indoor garden has never looked better. Highly recommended!"
+            </div>
+            <cite class="testimonial-author" itemprop="author">- Rajesh Kumar, Mumbai</cite>
+        </blockquote>
+        <blockquote class="testimonial" itemscope itemtype="https://schema.org/Review">
+            <div class="testimonial-text" itemprop="reviewBody">
+                "Great variety of plants at reasonable prices. The delivery was prompt and the packaging was secure."
+            </div>
+            <cite class="testimonial-author" itemprop="author">- Anjali Patel, Bangalore</cite>
+        </blockquote>
+    </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter" aria-labelledby="newsletter-heading">
+    <h2 id="newsletter-heading">Subscribe to Our Newsletter</h2>
+    <p>Get updates on new plants, special offers, and gardening tips delivered to your inbox.</p>
+    <div class="newsletter-form">
+        <input type="email" placeholder="Your email address" id="newsletter-email" aria-label="Your email address">
+        <button onclick="subscribeNewsletter()">Subscribe</button>
+    </div>
+</section>
+
+<!-- --- Login/Signup Modal --- -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeLoginModal()">×</span>
+        <h2>Welcome to Green Plant</h2>
+        
+        <div class="modal-tabs">
+            <div class="modal-tab active" onclick="switchTab('login')">Login</div>
+            <div class="modal-tab" onclick="switchTab('signup')">Sign Up</div>
+        </div>
+        
+        <div id="login-tab" class="tab-content active">
+            <input type="text" placeholder="Email or Username" id="login-username">
+            <input type="password" placeholder="Password" id="login-password">
+            <button onclick="handleLogin()">Login</button>
+            <p style="margin-top:10px;">
+                <a href="#" onclick="forgotPassword()" style="text-decoration:none; color:#4CAF50;">Forgot Password?</a>
+            </p>
+        </div>
+        
+        <div id="signup-tab" class="tab-content">
+            <input type="text" placeholder="Full Name" id="signup-name">
+            <input type="email" placeholder="Email" id="signup-email">
+            <input type="password" placeholder="Password" id="signup-password">
+            <input type="password" placeholder="Confirm Password" id="signup-confirm">
+            <button onclick="handleSignup()">Create Account</button>
+        </div>
+    </div>
+</div>
+
+<!-- Cart Modal -->
+<div id="cartModal" class="cart-modal">
+    <div class="cart-header">
+        <h2>Your Cart</h2>
+        <span class="close-modal" onclick="closeCartModal()">×</span>
+    </div>
+    <div class="cart-items" id="cartItems">
+        <!-- Cart items will be added here dynamically -->
+    </div>
+    <div class="cart-total">
+        <span>Total:</span>
+        <span id="cartTotal">₹0</span>
+    </div>
+    <button class="checkout-btn" onclick="showCheckout()">Proceed to Checkout</button>
+</div>
+
+<!-- Product Detail Modal -->
+<div id="productDetailModal" class="modal">
+    <div class="modal-content" style="max-width: 800px;">
+        <span class="close-modal" onclick="closeProductDetail()">×</span>
+        <div id="productDetailContent">
+            <!-- Product details will be loaded here -->
+        </div>
+    </div>
+</div>
+
+<!-- Checkout Modal -->
+<div id="checkoutModal" class="modal">
+    <div class="modal-content" style="max-width: 600px;">
+        <span class="close-modal" onclick="closeCheckoutModal()">×</span>
+        <h2>Checkout</h2>
+        <div class="checkout-steps">
+            <div class="step active">1. Address</div>
+            <div class="step">2. Payment</div>
+            <div class="step">3. Confirmation</div>
+        </div>
+        <div id="checkoutContent">
+            <!-- Checkout steps will be loaded here -->
+        </div>
+    </div>
+</div>
+
+<!-- Order Tracking Modal -->
+<div id="orderTrackingModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeOrderTracking()">×</span>
+        <h2>Track Your Order</h2>
+        <div id="orderTrackingContent">
+            <!-- Order tracking details -->
+        </div>
+    </div>
+</div>
+
+<!-- Wishlist Modal -->
+<div id="wishlistModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeWishlist()">×</span>
+        <h2>Your Wishlist</h2>
+        <div id="wishlistItems">
+            <!-- Wishlist items -->
+        </div>
+    </div>
+</div>
+
+<!-- Admin Panel Modal -->
+<div id="adminPanel" class="modal">
+    <div class="modal-content" style="max-width: 900px;">
+        <span class="close-modal" onclick="closeAdminPanel()">×</span>
+        <h2>Order Management</h2>
+        <div id="adminOrdersList">
+            <!-- Orders yahan display honge -->
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer style="background-color:#2E7D32; color:white; padding:30px 20px; text-align:center; margin-top:40px;" role="contentinfo">
+    <div style="margin-bottom:15px;">
+        <h2>🌿 Green Plant Saharanpur</h2>
+        <p>Your one-stop shop for beautiful indoor & outdoor plants in Saharanpur!</p>
+    </div>
+    <div style="margin-bottom:15px;">
+        <a href="#" aria-label="Facebook" style="color:white; margin:0 10px; font-size:20px;"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram" style="color:white; margin:0 10px; font-size:20px;"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter" style="color:white; margin:0 10px; font-size:20px;"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn" style="color:white; margin:0 10px; font-size:20px;"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="YouTube" style="color:white; margin:0 10px; font-size:20px;"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div style="margin-bottom:10px;">
+        <p>📞 Contact: <a href="tel:+916556515556" style="color:white;">6556515556</a></p>
+        <p>✉️ Email: <a href="mailto:info@greenplantsaharanpur.com" style="color:white;">info@greenplantsaharanpur.com</a></p>
+    </div>
+    <div>
+        <p style="font-size:14px;">&copy; 2025 Green Plant Saharanpur. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- ===== EXTERNAL JAVASCRIPT ===== -->
+<script src="script.js"></script>
+</body>
+</html>
