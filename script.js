@@ -4,7 +4,7 @@ let customerInfo = {};
 let orders = JSON.parse(localStorage.getItem('plantOrders')) || [];
 let wishlist = [];
 
-/* ===== PRODUCT DATA ===== */
+/* ===== PRODUCT DATA ===== *
 const products = {
     1: {
         id: 1,

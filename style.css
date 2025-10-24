@@ -29,7 +29,6 @@ body {
     font-family: 'Verdana', sans-serif;
     background: linear-gradient(135deg, #4CAF50, #2E7D32);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
     letter-spacing: 1px;
 }
@@ -65,6 +64,7 @@ body {
     padding: 6px 12px;
     border-radius: 20px;
     border: none;
+    margin-right: 25px;
     background-color: white;
     color: #4CAF50;
     font-weight: bold;
